@@ -23,7 +23,7 @@ body {
 header {
     background-color:var(--secondary-color);
     width: 100%;
-    height: 200px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -66,6 +66,8 @@ header a {
 }
 
 
+/* main style start*/
+
 /*hero style start*/
 
 .hero {
@@ -90,14 +92,68 @@ header a {
     
 }
 
+/* content style start*/ 
+
+.content {
+    background-color: var(--highlight-color);
+    display: flex;
+    justify-content: space-around;
+    /* column-gap: 5px; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+}
+
 /*about me style start*/
 
 .about {
-    color: purple;
+     background-color: turquoise;
+     width: 90%; 
+     height: 20%;
 }
-/*my portfolio style start*/
 
+/*my portfolio style start*/
+.portfolio {
+    background-color: tomato;
+    width: 90%;
+    height: 50%;
+    justify-content: space-between;
+    
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 10px;
+    height: 20px;
+}
+
+.projects :first-child {
+    width: 85%;
+    height: 40px;
+    
+}
+
+.project-card {
+    background-color: green;
+    width: 35%;
+    height: 60px;
+    
+}
 /*contact info style start*/
 
+.contact {
+    background-color: indigo;
+    width: 90%;
+    height:20% ;
+}
 /*footer style start*/
-
+footer {
+    background-color: var(--secondary-color);
+    height:100px
+}
