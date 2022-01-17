@@ -83,7 +83,7 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items:center;
-    height: 20vh;
+    height: 30vh;
 }
 
 .hero img {
@@ -99,7 +99,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
+    align-items: justify;
     
 }
 
@@ -136,13 +136,11 @@ main {
 }
 
 
-
-
 /*my portfolio style start*/
 .portfolio {
     background-color: var(--primary-color);
     width: 100%;
-    height: 60%;
+    /* height: 60%; */
     justify-content: space-between;
     border-radius: 5px;
 }
@@ -153,6 +151,7 @@ main {
     justify-content: space-around;
     row-gap: 30px;
     padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .projects :first-child {
@@ -250,4 +249,33 @@ main {
 footer {
     background-color: var(--secondary-color);
     height:5vh;
+}
+
+
+/*media queries for smaller desktop screens and smaller*/
+
+@media screen and (max-width: 980px) {
+    /*this will be applied on any screen smaller than 980px*/
+
+
+}
+/* media queries for tablets and smaller */
+
+@media screen and (max-width: 775px) {
+    
+    /* this will be applied on any screen between 768px and 575px */
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+@media screen and (max-width: 575px) {
+    
+    /* this will be applied on any screen smaller than 575px */
+
+    .hero h2 {
+        width: 50%;
+    }
+
 }
