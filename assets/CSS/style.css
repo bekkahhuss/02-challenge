@@ -157,7 +157,6 @@ main {
 
 .projects :first-child {
     width: 85%;
-    background-image: url("../images/hero-bg.jpg"); 
     text-decoration: none; 
     display: flex;
 }
@@ -165,12 +164,14 @@ main {
 .projects :first-child p {
     background-image: none;
     background-color: var(--highlight-color);
-    width: 30%;
+    width: 15%;
     color: var(--primary-color);
     align-self:flex-start;
 }
 
-
+.projects #run-buddy {
+    background-image: url("../images/hero-bg.jpg");
+}
 .projects #horiseon {
     background-image: url("../images/digital-marketing-meeting.jpg");
 }
@@ -183,15 +184,11 @@ main {
     background-position: 80%; */
     width: 35%;
     height: 300px;
-    border-radius: 5px;    
+    border-radius: 5px;
+    text-decoration: none;
 }
 
-.project-card p {
-    color: green;
-    font-size: 25px;
-    
-    
-}
+
 
 
 /*contact info style start*/
@@ -201,7 +198,67 @@ main {
     width: 100%;
     height:15%;
     border-radius: 5px;
+    /* display:flex; */
+    /* justify-content: space-between; */
 }
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    
+}
+.contact-links {
+    background-color: turquoise;
+    width: 30%;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contact-links p {
+    text-align: left;
+}
+.contact-form {
+    width: 30%;
+    background-color: yellow;
+    border-radius: 5px;
+    
+}
+.contact-form input, .contact-form textarea {
+    border: 1px solid #024e76;
+    border-radius: 10px;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    background-color: rgb(199, 226, 245, 0.8);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: #fff;
+    outline: none;
+}
+.contact-form button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary-color);
+    color: #024e76;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+}
+
+
 /*footer style start*/
 footer {
     background-color: var(--secondary-color);
